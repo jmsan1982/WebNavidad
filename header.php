@@ -29,7 +29,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Genero A-D
+            Genero A a la D
           </a>
           <?php
           $sql = "select * from generos order by genero limit 12"; 
@@ -44,7 +44,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Genero D-M
+            Genero D a la M
           </a>
           <?php
           $sql = "select * from generos where genero between 'Documental' and 'manga' order by genero;"; 
@@ -59,7 +59,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Genero M-V
+            Genero M a la Z
           </a>
           <?php
           $sql = "select * from generos where genero between 'melodrama' and 'violencia' order by genero;"; 
