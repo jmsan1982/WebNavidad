@@ -72,6 +72,21 @@
           }
           ?>
         </li>
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Genero na a na
+          </a>
+          <?php
+          $sql = "select * from generos where genero between 'melodrama' and 'violencia' order by genero;"; 
+          $result = $conn->query($sql);
+          ?>
+          <div class="dropdown-menu text-danger bg-light" aria-labelledby="navbarDropdown">
+           <?php 
+           while($row = $result->fetch_assoc()) {
+            echo '<a class="dropdown-item text-danger" href="categorias.php?cat='.$row["id"].'">'.utf8_encode($row["genero"]).'</a>';
+          }
+          ?>
+        </li>
       </ul>
     </div>
 
